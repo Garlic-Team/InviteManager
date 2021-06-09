@@ -1,0 +1,19 @@
+{
+  "name": "Invite-Manager",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "@keyv/sqlite": "^2.0.2",
+    "discord.js": "^12.5.3",
+    "express": "^4.17.1",
+    "gcommands": "^4.1.2",
+    "keyv": "^4.0.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Garlic-Team",
+  "license": "MIT"
+}
