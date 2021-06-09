@@ -9,7 +9,7 @@ const client = new Client({
   disableMentions: "everyone"
 });
 
-client.db = new Keyv('sqlite://db.sqlite');
+client.db = new Keyv();
 client.config = require("./config.json");
 client.cachedInvites = {};
 client.findDefChannel = (guild, type) => {
