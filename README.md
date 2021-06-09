@@ -1,5 +1,5 @@
 <div align="center">
-    <h1>Invite Manager/h1>
+    <h1>Invite Manager</h1>
 </div>
 
 ----
