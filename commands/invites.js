@@ -84,12 +84,11 @@ module.exports = {
       
       let totalData = await client.db.get(`guild_${guild.id}`);
       let invites = totalData.invites.find((v) => v.userId === checkingMember.id);
-      console.log(invites)
 
       if (args[0] === "add") {
         invites.bonus = parseInt(invites.bonus) + parseInt(args[2]);
         totalData.invites[totalData.invites.findIndex((a) => a.userId === invites.userId)] = invites;
-        console.log(totalData)
+
         await client.db.set(`guild_${guild.id}`, totalData);
 
         respond(`${checkingMember} +${args[2]} invites`);

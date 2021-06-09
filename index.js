@@ -89,7 +89,7 @@ client.updateDatabase = async () => {
     }
     let addShit = [];
     for (let j = 0; j < members.length; j++) {
-      if (!gdb.invites.find(a => a.userId === members[j].id)) {
+      if (!gdb.invites.find(a => a.userId === members[j].id) && !members[j].user.bot) {
         let dt = JSON.parse(JSON.stringify(client.guildMemberData));
         dt.userId = members[j].id;
         addShit.push(dt);
