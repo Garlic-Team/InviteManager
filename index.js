@@ -1,3 +1,4 @@
+require("dotenv").config()
 const express=require("express"),app=express();app.get("/",function(e,p){p.send("Hello World")}),app.listen(3e3);
 
 require("./commands/invites.js");
