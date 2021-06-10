@@ -1,11 +1,12 @@
 const { MessageEmbed } = require("discord.js")
 const { MessageActionRow, MessageButton } = require("gcommands")
+const config = require("../config.json")
 
 module.exports = {
     name: "leaderboard",
     description: "Check top",
     clientRequiredPermissions: ["SEND_MESAGES","EMBED_LINKS"],
-    guildOnly: "747526604116459691",
+    guildOnly: config.guildId,
     run: async({client, member, guild, channel, message, respond, edit}, args) => {
       let embed = new MessageEmbed()
         .setAuthor(`${guild.name} | Invite LeaderBoard`)

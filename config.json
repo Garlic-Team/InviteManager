@@ -1,5 +1,6 @@
 {
   "embedColor": "#de3c51",
+  "guildId": "747526604116459691",
   "messages": {
     "newMember": {
       "unkownInvite": "New member, **{member.username}**! I couldn't figure out who invited them",

@@ -1,5 +1,6 @@
 const { MessageEmbed } = require("discord.js");
 const { MessageActionRow, MessageButton, SlashCommand } = require("gcommands");
+const config = require("../config.json")
 
 module.exports = {
     name: "invites",
@@ -77,7 +78,7 @@ module.exports = {
         ]
       },
     ],
-    guildOnly: "747526604116459691",
+    guildOnly: config.guildId,
     run: async({client, member, guild, channel, message, respond}, args, objargs) => {
       let checkingMember = member;
       if(args[1]) checkingMember = guild.members.cache.get(args[1]) || member;

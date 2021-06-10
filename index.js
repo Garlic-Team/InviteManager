@@ -39,7 +39,7 @@ client.cacheInvites = async () => {
   let guilds = client.guilds.cache.array();
   for (let i = 0; i < guilds.length; i++) {
     let g = guilds[i];
-    if (g.me.hasPermission("MANAGE_SERVER")) {
+    if (g.me.hasPermission("MANAGE_GUILD")) {
       let invites;
       try {
         invites = (await g.fetchInvites()).array();
