@@ -15,7 +15,7 @@ client.cachedInvites = {};
 client.findDefChannel = (guild, type) => {
   let finalChannel = null;
   if(type == "system_channel") {
-    let allSystemChannels = ["welcome","hi","hello","traffic", "new-members"]
+    let allSystemChannels = client.config.allWelcomeChannels
     finalChannel = guild.channels.cache.find(c => allSystemChannels.find(a => c.name.toLowerCase().includes(a.toLowerCase()) || a.toLowerCase().includes(c.name.toLowerCase())));
   }
 

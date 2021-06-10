@@ -13,5 +13,6 @@
       "otherInvites": "**{member.username}** has **${member.invites}** invites!",
       "ownInvites": "You have **{member.invites}** invites!"
     }
-  }
+  },
+  "allWelcomeChannels": ["welcome","hi","hello","traffic", "new-members"]
 }
