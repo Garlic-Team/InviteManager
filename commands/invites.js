@@ -1,15 +1,15 @@
 const { MessageEmbed } = require("discord.js");
-const { MessageActionRow, MessageButton, SlashCommand } = require("gcommands");
+const { MessageActionRow, MessageButton, ArgumentType } = require("gcommands");
 const config = require("../config.json")
 
 module.exports = {
     name: "invites",
     description: "Check invites",
     clientRequiredPermissions: ["SEND_MESAGES","EMBED_LINKS"],
-    expectedArgs: [
+    args: [
       {
         name: "add",
-        type: SlashCommand.SUB_COMMAND,
+        type: ArgumentType.SUB_COMMAND,
         description: "add invites",
         options: [
           {
@@ -20,7 +20,7 @@ module.exports = {
           },
           {
             name: "value",
-            type: SlashCommand.INTEGER,
+            type: ArgumentType.INTEGER,
             description: "value lol",
             required: true
           },
@@ -28,7 +28,7 @@ module.exports = {
       },
       {
         name: "set",
-        type: SlashCommand.SUB_COMMAND,
+        type: ArgumentType.SUB_COMMAND,
         description: "set invites",
         options: [
           {
@@ -39,7 +39,7 @@ module.exports = {
           },
           {
             name: "value",
-            type: SlashCommand.INTEGER,
+            type: ArgumentType.INTEGER,
             description: "value lol",
             required: true
           },
@@ -47,7 +47,7 @@ module.exports = {
       },
       {
         name: "remove",
-        type: SlashCommand.SUB_COMMAND,
+        type: ArgumentType.SUB_COMMAND,
         description: "remove invites",
         options: [
           {
@@ -58,7 +58,7 @@ module.exports = {
           },
           {
             name: "value",
-            type: SlashCommand.INTEGER,
+            type: ArgumentType.INTEGER,
             description: "value lol",
             required: true
           },
@@ -66,7 +66,7 @@ module.exports = {
       },
       {
         name: "get",
-        type: SlashCommand.SUB_COMMAND,
+        type: ArgumentType.SUB_COMMAND,
         description: "get invites",
         options: [
           {
