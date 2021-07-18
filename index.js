@@ -114,7 +114,7 @@ client.on("ready", async () => {
       slash: 'both',
       prefix: '!',
     },
-    defaultCooldown: 3
+    defaultCooldown: "3s"
   });
 
   client.cachedInvites = await client.cacheInvites();
