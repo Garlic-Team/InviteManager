@@ -8,7 +8,7 @@
     "discord.js": "^12.5.3",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
-    "gcommands": "^5.2.3",
+    "gcommands": "^5.2.6",
     "keyv": "^4.0.3"
   },
   "devDependencies": {},
