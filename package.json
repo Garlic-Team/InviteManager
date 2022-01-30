@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "@keyv/sqlite": "^2.0.2",
+    "@keyv/sqlite": "^3.0.0",
     "discord.js": "^12.5.3",
     "dotenv": "^10.0.0",
     "express": "^4.17.2",
