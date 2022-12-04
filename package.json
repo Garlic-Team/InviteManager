@@ -7,7 +7,7 @@
     "@keyv/sqlite": "^2.0.2",
     "discord.js": "^12.5.3",
     "dotenv": "^15.0.0",
-    "express": "^4.17.2",
+    "express": "^4.17.3",
     "gcommands": "^5.2.3",
     "keyv": "^4.0.5"
   },
